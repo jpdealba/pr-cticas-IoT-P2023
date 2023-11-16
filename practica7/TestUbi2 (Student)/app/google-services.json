@@ -1,41 +1,29 @@
 {
   "project_info": {
-    "project_number": "693666231174",
-    "project_id": "testubi2",
-    "storage_bucket": "testubi2.appspot.com"
+    "project_number": "101045719528",
+    "project_id": "ubidots-7011e",
+    "storage_bucket": "ubidots-7011e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:693666231174:android:e424196a9889b95418b207",
+        "mobilesdk_app_id": "1:101045719528:android:cc92e5317f4812f163545d",
         "android_client_info": {
           "package_name": "com.example.testubi2"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "693666231174-o9i4mou9fbra0csjkpsapirh5rl3taq1.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBkHMnOyCevMWlY3FXIy6rDNl5_LgXLN6o"
+          "current_key": "AIzaSyAlNajM5N3f-E_LqGhmp37F0D9_5m8wIQM"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "693666231174-o9i4mou9fbra0csjkpsapirh5rl3taq1.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
   ],
   "configuration_version": "1"
 }
-
-
