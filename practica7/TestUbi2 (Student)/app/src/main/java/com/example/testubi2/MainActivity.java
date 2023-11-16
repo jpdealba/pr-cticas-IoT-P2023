@@ -50,15 +50,16 @@ public class MainActivity extends Activity {
 
 
     public class ApiUbidots extends AsyncTask<Integer, ProgressUpdate, Void> {
-        private final String API_KEY_UBIDOTS = "YOUR_UBIDOTS_APIKEY_HERE";
-        private final String TempVariable_ID = "YOUR_TEMPERATURE_VARIABLE_ID_HERE";
-        private final String HumVariable_ID = "YOUR_HUMIDITY_VARIABLE_ID_HERE";
+        private final String API_KEY_UBIDOTS = "BBFF-d23d0fc08bf3fc33695e7da1ad26f325cbf";
+        private final String TempVariable_ID = "65567d5e660cdf000e5647de";
+        private final String HumVariable_ID = "65567d728a168e000de75fd9";
 
 
         @Override
         protected Void doInBackground(Integer... params) {
             while(active){
                 ApiClient apiClient = new ApiClient(API_KEY_UBIDOTS); //API_KEY de Ubidots
+                Log.d("MyApp", "Valor actual de la temperatura: " + apiClient.getVariable(TempVariable_ID));
                 Variable temperatura = apiClient.getVariable(TempVariable_ID); //Obtener referencia a la variable de temperatura con su ID
                 Variable humedad = apiClient.getVariable(HumVariable_ID); //Obtener referencia a la variable de humedad con su ID
                 Value[] valoresTemperatura = temperatura.getValues(); //Obtener valores cambiantes de temperatura
